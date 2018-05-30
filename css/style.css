@@ -1,0 +1,296 @@
+/* Scss Document */
+html, body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #B1CCDD;
+  height: 100%; }
+
+h2, p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  header section {
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    justify-content: center;
+    background: #176FAF;
+    padding: 100px 0;
+    max-height: 500px;
+    display: flex;
+    align-content: center;
+    text-align: center; }
+    header section {
+      flex: 1 0 530px; }
+    header section .hinner {
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      header section .hinner nav {
+        margin: 10px;
+        border-radius: 10px;
+        background: #fff;
+        padding: 0px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        overflow: hidden; }
+        header section .hinner nav a {
+          position: relative;
+          padding: 2.5px 0 0;
+          margin: 0;
+          font-size: 1.5em;
+          line-height: 1.5em;
+          color: #176FAF;
+          vertical-align: middle;
+          width: 100%;
+          transition: 0.3s ease; }
+          header section .hinner nav a:hover {
+            position: relative;
+            color: #F98B00;
+            transition: 0.3s ease; }
+          header section .hinner nav a:before {
+            content: '';
+            position: absolute;
+            width: calc(100% - 40px);
+            height: 5px;
+            background: #F98B00;
+            border-radius: 100px;
+            left: 20px;
+            bottom: -5px;
+            margin: 0 0 0 -2.5px;
+            transition: 0.3s ease; }
+          header section .hinner nav a:hover:before {
+            bottom: 0px;
+            transition: 0.3s ease; }
+          header section .hinner nav a:after {
+            content: '';
+            position: absolute;
+            right: -1px;
+            height: calc(100% - 20px);
+            top: 10px;
+            width: 2px;
+            background: #176FAF;
+            transform: rotate(35deg);
+            border-radius: 100px; }
+          header section .hinner nav a:last-child:after {
+            display: none; }
+    header section h2 {
+      font-size: 3em;
+      line-height: auto;
+      color: #fff; }
+    header section p {
+      font-size: 1em;
+      line-height: auto;
+      color: #002958; }
+
+.font30 {
+  font-size: 30px; }
+
+.font50 {
+  font-size: 50px; }
+
+pre {
+  background: #373737;
+  color: #D1C14B;
+  padding: 0 0;
+  margin: 0;
+  white-space: pre-line; }
+  pre div.codecontent {
+    display: block;
+    padding: 15px 0; }
+  pre p {
+    width: calc(100% - 30px);
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 15px; }
+    pre p span {
+      color: #D14B4B; }
+  pre h2 {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 5px;
+    background: #323232;
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 1.5em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold; }
+  pre code {
+    color: #4B98D1;
+    text-align: left;
+    padding: 0 0 0;
+    margin: 0; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .container div.flexarea {
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background: #fff;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 15px; }
+    .container div.flexarea {
+      flex: 1 0 500px; }
+    .container div.flexarea .items > p {
+      color: #525252;
+      font-size: 13px;
+      line-height: 23px;
+      margin: 0 0 20px;
+      padding: 0 0 20px;
+      border-bottom: dashed 1px #888888; }
+      .container div.flexarea .items > p span {
+        font-weight: 700;
+        color: #222222; }
+    .container div.flexarea .items:nth-child(2) {
+      background: #F3F676; }
+    .container div.flexarea .inputarea {
+      display: flex;
+      flex-direction: row; }
+      .container div.flexarea .inputarea .innerinput {
+        margin: 0 0 0 5px; }
+        .container div.flexarea .inputarea .innerinput p {
+          display: inline-block;
+          font-size: 12.5px;
+          letter-spacing: -0.5px; }
+    .container div.flexarea .inputtextarea {
+      display: flex;
+      flex-wrap: wrap; }
+      .container div.flexarea .inputtextarea .innerinput {
+        display: flex;
+        flex: 1 0 10px;
+        margin: 0 0 0 5px; }
+        .container div.flexarea .inputtextarea .innerinput input {
+          flex: 1 0 5px;
+          margin: 10px 0; }
+        .container div.flexarea .inputtextarea .innerinput p {
+          flex: 0 0 5px;
+          display: inline-block;
+          font-size: 12.5px;
+          letter-spacing: -0.5px;
+          line-height: 3.2em; }
+    .container div.flexarea .inner {
+      display: flex; }
+      .container div.flexarea .inner div {
+        flex-grow: 1;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        align-items: center; }
+        .container div.flexarea .inner div:nth-child(1) {
+          background: #CD1E21; }
+        .container div.flexarea .inner div:nth-child(2) {
+          background: #871ECD; }
+        .container div.flexarea .inner div:nth-child(3) {
+          background: #1E94CD; }
+        .container div.flexarea .inner div:nth-child(4) {
+          background: #1ECD3A; }
+        .container div.flexarea .inner div:nth-child(5) {
+          background: #CDC71E; }
+        .container div.flexarea .inner div:nth-child(6) {
+          background: #CD7F1E; }
+        .container div.flexarea .inner div p {
+          width: 100%;
+          text-algn: center;
+          border: 0; }
+      .container div.flexarea .inner div.shrinkitem {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 600px; }
+    .container div.flexarea.flexdirection .inner.row {
+      flex-direction: row; }
+    .container div.flexarea.flexdirection .inner.row-reverse {
+      flex-direction: row-reverse; }
+    .container div.flexarea.flexdirection .inner.column {
+      flex-direction: column; }
+    .container div.flexarea.flexdirection .inner.column-reverse {
+      flex-direction: column-reverse; }
+    .container div.flexarea.flexdirection .inner.column-reverse {
+      flex-direction: column-reverse; }
+    .container div.flexarea.flexwrap .inner.nowrap {
+      flex-wrap: nowrap; }
+    .container div.flexarea.flexwrap .inner.wrap {
+      flex-wrap: wrap; }
+      .container div.flexarea.flexwrap .inner.wrap > div {
+        flex-basis: 150px; }
+    .container div.flexarea.flexwrap .inner.wrap-reverse {
+      flex-wrap: wrap-reverse; }
+      .container div.flexarea.flexwrap .inner.wrap-reverse > div {
+        flex-basis: 150px; }
+    .container div.flexarea.justifycontent .inner div {
+      flex: 0 0 20px; }
+    .container div.flexarea.justifycontent .inner.flex-start {
+      justify-content: flex-start; }
+    .container div.flexarea.justifycontent .inner.flex-end {
+      justify-content: flex-end; }
+    .container div.flexarea.justifycontent .inner.center {
+      justify-content: center; }
+    .container div.flexarea.justifycontent .inner.space-between {
+      justify-content: space-between; }
+    .container div.flexarea.justifycontent .inner.space-around {
+      justify-content: space-around; }
+    .container div.flexarea.justifycontent .inner.space-evenly {
+      justify-content: space-evenly; }
+    .container div.flexarea.alignitems .inner {
+      height: 400px; }
+      .container div.flexarea.alignitems .inner > div {
+        height: auto; }
+      .container div.flexarea.alignitems .inner.flex-start {
+        align-items: flex-start; }
+      .container div.flexarea.alignitems .inner.flex-end {
+        align-items: flex-end; }
+      .container div.flexarea.alignitems .inner.center {
+        align-items: center; }
+      .container div.flexarea.alignitems .inner.baseline {
+        align-items: baseline; }
+      .container div.flexarea.alignitems .inner.stretch {
+        align-items: stretch; }
+    .container div.flexarea.aligncontent .inner {
+      height: 400px;
+      flex-wrap: wrap; }
+      .container div.flexarea.aligncontent .inner > div {
+        flex: 1 0 300px;
+        height: auto; }
+      .container div.flexarea.aligncontent .inner.flex-start {
+        align-content: flex-start; }
+      .container div.flexarea.aligncontent .inner.flex-end {
+        align-content: flex-end; }
+      .container div.flexarea.aligncontent .inner.center {
+        align-content: center; }
+      .container div.flexarea.aligncontent .inner.stretch {
+        align-content: stretch; }
+      .container div.flexarea.aligncontent .inner.space-between {
+        align-content: space-between; }
+      .container div.flexarea.aligncontent .inner.space-around {
+        align-content: space-around; }
+    .container div.flexarea.alignself .inner {
+      height: 400px; }
+      .container div.flexarea.alignself .inner div {
+        height: auto; }
+        .container div.flexarea.alignself .inner div.flex-start {
+          align-self: flex-start; }
+        .container div.flexarea.alignself .inner div.flex-end {
+          align-self: flex-end; }
+        .container div.flexarea.alignself .inner div.center {
+          align-self: center; }
+        .container div.flexarea.alignself .inner div.baseline {
+          align-self: baseline; }
+        .container div.flexarea.alignself .inner div.stretch {
+          align-self: stretch; }

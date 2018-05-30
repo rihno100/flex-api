@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>introduce flex css</title>
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+	<section>
+     <div class="hinner">
+        <nav><a href="#">Brizo</a><a href="#">Flex API</a><a href="#">Flex Tutorial</a></nav>
+    	<h2>This is Fundamantals For Flex Layout</h2>
+        <p>This Web Page for Introducing Flex Layout.</p>
+     </div>
+    </section>
+</header>
+<div class="container">
+	<!------flexarea start------->
+    <div class="flexarea flexdirection">
+        <div class="items">
+        <h2>flex-direction</h2>
+        <p>
+            <span>적용영역 : </span>flex container
+            <br><span>역할 : </span>item의 정렬 방향을 정해준다.
+            <br><span>기본값 : </span>row
+        </p>
+        </div>
+        <div class="inputarea items">
+            <div class="innerinput"><input type="radio" name="itemecheck1" data-class="row"><p>row</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck1" data-class="row-reverse"><p>row-reverse</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck1" data-class="column"><p>column</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck1" data-class="column-reverse"><p>column-reverse</p></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+    <!------flexarea start------->
+    <div class="flexarea flexwrap">
+        <div class="items">
+        <h2>flex-wrap</h2>
+        <p><span>적용영역 : </span>flex container
+        <br><span>역할 : </span>item을 감싸는 방식을 결정해준다.
+        <br><span>기본값 : </span>nowrap(한줄로 노출, 줄바꿈(x)) 예문: flex-basis:150px item 너비가 150px 미만의경우 nowrap으로 표기된다.</p>
+        </div>
+        <div class="inputarea items">
+            <div class="innerinput"><input type="radio" name="itemecheck2" data-class="nowrap"><p>nowrap</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck2" data-class="wrap"><p> wrap</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck2" data-class="wrap-reverse"><p>wrap-reverse</p></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+        <!------flexarea start------->
+    <div class="flexarea justifycontent">
+        <div class="items">
+        <h2>justify-content</h2>
+        <p>
+            <span>적용영역 :</span> flex container
+            <br><span>역할 : </span>item 과 container 사이 남은 여백을 분할 또는 분산
+            <br><span>기본값 : </span>flex-start(남은 여백을 모두 뒤로보낸다.)
+            <br><span>flex-end : </span>남은 여백을 모두 앞으로보내고 item 시작을 뒤에서부터 한다.
+            <br><span>center :</span>남은 여백을 좌우로 보내고 item 시작을 가운데서 한다.
+            <br><span>space-between : </span>container 와 item 사이여백을 제외하고 item간 여백을 균등하게 나눈다.
+            <br><span>space-around : </span>남은 여백을  item을 감싸는 여백값으로 균등하게 나눈다.
+            <br><span>space-evenly : </span>남은 여백을 item을 감싸는 여백값으로 균등하게 나눈다.(container 와 item사이 여백도 포함하여 균등분배)
+        </p>
+ 		<pre><h2>code</h2><div class="codecontent"><p><code>.container {</code><br><span>justify-content</span>: flex-star, flex-end, center, space-between, space-around, space-evenly;<br><code> }</code></p></div></pre>
+        </div>
+        <div class="inputarea items">
+            <div class="innerinput"><input type="radio" name="itemecheck3" data-class="flex-start"><p>flex-start</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck3" data-class="flex-end"><p>flex-end</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck3" data-class="center"><p>center</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck3" data-class="space-between"><p>space-between</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck3" data-class="space-around"><p>space-around</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck3" data-class="space-evenly"><p>space-evenly</p></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+    <!------flexarea start------->
+    <div class="flexarea alignitems">
+        <div class="items">
+        <h2>algin-items</h2>
+        <p>
+            <span>적용영역 :</span> flex container
+            <br><span>역할 : </span>item by item vetical align (각각의 아이템별 새로정렬)
+            <br><span>기본값 : </span>stretch
+            <br><span>flex-start : </span>상단에서 시작
+            <br><span>flex-end :</span>하단에서 시작
+            <br><span>center : </span>새로 중간 정렬
+            <br><span>baseline : </span>item 내부 text baseline 기준으로 새로 중간 정렬
+            <br><span>stretch : </span>상단에서 하단까지 늘리기
+        </p>
+<pre><h2>code</h2><div class="codecontent"><p><code>.container {</code><br><span>align-items </span>: stretch, flex-star, flex-end, center, base-line;<br><code> }</code></p></div></pre>
+        </div>
+        <div class="inputarea items">
+       		<div class="innerinput"><input type="radio" name="itemecheck4" data-class="stretch"><p>stretch</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck4" data-class="flex-start"><p>flex-start</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck4" data-class="flex-end"><p>flex-end</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck4" data-class="center"><p>center</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck4" data-class="baseline"><p>baseline</p></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p class="font30">2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p class="font50">5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+    <!------flexarea start------->
+    <div class="flexarea aligncontent">
+        <div class="items">
+        <h2>algin-content</h2>
+        <p>
+            <span>적용영역 :</span> flex container
+            <br><span>역할 : </span>item 한 행별로 그룹화(content)하여 새로정렬
+            <br><span>기본값 : </span>stretch
+            <br><span>flex-start : </span>상단에서 시작,남은 여백을 아래로 보낸다.
+            <br><span>flex-end :</span>하단에서 시작, 남은 여백을 위로보낸다.
+            <br><span>center : </span>새로 중간 정렬, 남은 여백을 위아래로 보낸다.
+            <br><span>stretch : </span>그룹별 container 높이만큼 균등하게 높이를 갖는다. 여백을 없앤다.
+            <br><span>space-between : </span>남은 여백을 그룹여백값으로 균등하게 나눈다.(그룹과 container 사이여백은 제외)
+            <br><span>space-around : </span>남은 여백을 각 그룹을 둘러싸게  균등하게 나눈다. 
+        </p>
+        <pre><h2>code</h2><div class="codecontent"><p><code>.container {</code><br><span>align-content </span>: stretch, flex-star, flex-end, center, space-between, space-around;<br><code> }</code></p></div></pre>
+        </div>
+        <div class="inputarea items">
+            <div class="innerinput"><input type="radio" name="itemecheck5" data-class="stretch"><p>stretch</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck5" data-class="flex-start"><p>flex-start</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck5" data-class="flex-end"><p>flex-end</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck5" data-class="center"><p>center</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck5" data-class="space-between"><p>space-between</p></div>
+            <div class="innerinput"><input type="radio" name="itemecheck5" data-class="space-around"><p>space-around</p></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+    <!------flexarea start------->
+    <div class="flexarea order">
+        <div class="items">
+        <h2>order</h2>
+        <p><span>적용영역 :</span> flex item
+        <br><span>역할 : </span>item의 index 값을 변경한다.
+        <br><span>기본값 : </span>0
+        <br><span>입력값 (정수) : </span>...-2,-1,0,1,2...
+        </p>
+        <pre><h2>code</h2><div class="codecontent"><p><code>.items {</code><br><span>order </span>: ...-2,-1,0,1,2...;<br><code> }</code></p></div></pre>
+        </div>
+        <div class="inputtextarea items">
+            <div class="innerinput"><p>items1:</p><input type="text"></div>
+            <div class="innerinput"><p>items2:</p><input type="text"></div>
+            <div class="innerinput"><p>items3:</p><input type="text"></div>
+            <div class="innerinput"><p>items4:</p><input type="text"></div>
+            <div class="innerinput"><p>items5:</p><input type="text"></div>
+            <div class="innerinput"><p>items6:</p><input type="text"></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+        <!------flexarea start------->
+    <div class="flexarea grow">
+        <div class="items">
+        <h2>flex-grow</h2>
+        <p>
+            <span>적용영역 :</span> flex item
+            <br><span>역할 : </span>개별 item width 값을 정한다. 
+            <br><span>기본값 : </span>0 <br>(flex-shrink의 기본값은 1이므로 flex-basis설정시 container가 줄어들때 basis 값 미만이 되면 shrink 비율로 줄어든다.) 
+            <br>단, flex-wrap : wrap 일경우 basis 값이 되면 item이 아래로 떨어진다. basis 설정 없이 flex-grow와 flex-shrink를 동실 설정시 우선 순위는 grow다.
+            <br>만약, flex-basis 값이 있고 cotainer크기가 item들의 너비값보다 클경우 container너비에서 basis값을 제외한 나머지여백을  grow값으로 나누어 각 item의 너비값에 반영한다.
+            <br><span>입력값 (정수) : </span>...-2,-1,0,1,2...
+        </p>
+        <pre><h2>code</h2><div class="codecontent"><p><code>.items {</code></p><p><span>flex-grow </span>: ..-2,-1,0,1,2...;</p><p><code> }</code></p></div></pre>
+        </div>
+        <div class="inputtextarea items">
+            <div class="innerinput"><p>items1:</p><input type="text"></div>
+            <div class="innerinput"><p>items2:</p><input type="text"></div>
+            <div class="innerinput"><p>items3:</p><input type="text"></div>
+            <div class="innerinput"><p>items4:</p><input type="text"></div>
+            <div class="innerinput"><p>items5:</p><input type="text"></div>
+            <div class="innerinput"><p>items6:</p><input type="text"></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+    <!------flexarea start------->
+    <div class="flexarea shrink">
+        <div class="items">
+        <h2>flex-shrink</h2>
+        <p>
+            <span>적용영역 :</span> flex item
+            <br><span>역할 : </span>개별 item width 값을 정한다. 
+            <br><span>기본값 : </span>1 <br>(flex-shrink의 기본값은 1이므로 flex-basis설정시 container가 줄어들때 basis 값 미만이 되면 shrink 비율로 줄어든다.) 
+            <br><span>입력값 (정수) : </span>...-2,-1,0,1,2...
+        </p>
+        <pre><h2>code</h2><div class="codecontent"><p><code>.items {</code></p><p><span>flex-shrink </span>: ..-2,-1,0,1,2...;</p><p><code> }</code></p></div></pre>
+        </div>
+        <div class="inputtextarea items">
+            <div class="innerinput"><p>items1:</p><input type="text"></div>
+            <div class="innerinput"><p>items2:</p><input type="text"></div>
+            <div class="innerinput"><p>items3:</p><input type="text"></div>
+            <div class="innerinput"><p>items4:</p><input type="text"></div>
+            <div class="innerinput"><p>items5:</p><input type="text"></div>
+            <div class="innerinput"><p>items6:</p><input type="text"></div>
+        </div>
+        <div class="inner items shrinkinner">
+            <div class="shrinkitem"><p>1</p></div>
+            <div class="shrinkitem"><p>2</p></div>
+            <div class="shrinkitem"><p>3</p></div>
+            <div class="shrinkitem"><p>4</p></div>
+            <div class="shrinkitem"><p>5</p></div>
+            <div class="shrinkitem"><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+    
+       <!------flexarea start------->
+    <div class="flexarea alignself itemsselect">
+        <div class="items">
+            <h2>align-self</h2>
+            <p>
+                <span>적용영역 :</span> flex item
+                <br><span>역할 : </span>특정 item의 정렬을 변경한다.
+                <br><span>기본값 : </span>align-items 의 값을 갖는다.(default : stretch)
+                <br><span>입력값 : </span>flex-star, flex-end, center, base-line, stretch(align-items와 동일)
+            </p>
+            <pre><h2>code</h2><div class="codecontent"><p><code>.items {</code><br><span>align-self </span>: stretch, flex-star, flex-end, center, base-line;<br><code> }</code></p></div></pre>
+        </div>
+        <div class="inputarea items">
+       		<div class="innerinput"><input type="radio" class="alignselfitem" name="itemecheck6" data-class="stretch"><p>stretch</p></div>
+            <div class="innerinput"><input type="radio" class="alignselfitem"name="itemecheck6" data-class="flex-start"><p>flex-start</p></div>
+            <div class="innerinput"><input type="radio" class="alignselfitem" name="itemecheck6" data-class="flex-end"><p>flex-end</p></div>
+            <div class="innerinput"><input type="radio" class="alignselfitem" name="itemecheck6" data-class="center"><p>center</p></div>
+            <div class="innerinput"><input type="radio" class="alignselfitem"name="itemecheck6" data-class="baseline"><p>baseline</p></div>
+        </div>
+        <div class="inner items">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
+            <div><p>6</p></div>
+        </div>
+    </div>
+    <!------flexarea end------->
+  
+        <!------flexarea start------->
+    <div class="flexarea">
+        <div class="items">
+            <h2>flex</h2>
+            <p>
+                <span>적용영역 :</span> flex item
+                <br><span>역할 : </span>item의  flex-grow, flex-shrink, flex-basis를 하나의 프로펄티로 변경
+                <br><span>기본값 : </span>flex: 0(flex-grow),1(flex-shrink),auto(flex-basis)
+                <br><span>입력값 : </span>flex-grow, flex-shrink, flex-basis 입력 값과 동일하게 입력
+            </p>
+            <pre><h2>code</h2><div class="codecontent"><p><code>.items {</code><br><span>flex </span>: 0 1 auto;<br><code> }</code></p></div></pre>
+        </div>
+    </div>
+    <!------flexarea end------->
+    
+</div>
+</body>
+</html>
